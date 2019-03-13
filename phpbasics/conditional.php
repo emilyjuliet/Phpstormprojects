@@ -1,5 +1,5 @@
 <?php
-$rentalhouses = "singleroom";
+$rentalhouses = "one bedroom";
 
 switch ($rentalhouses) {
     case "singleroom":
@@ -13,5 +13,20 @@ switch ($rentalhouses) {
         break;
     default:
         echo "There are no other rooms!";
+}
+
+
+$grade = 40;
+
+if ($grade < "40") {
+    echo "E!";
+} elseif ($grade = "40-55") {
+    echo "D";
+} elseif ($grade = "56-65") {
+    echo "C";
+} elseif ($grade = "66-75") {
+    echo "B";
+} else {
+    echo "A";
 }
 ?>
