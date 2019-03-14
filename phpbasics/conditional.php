@@ -9,7 +9,7 @@ switch ($rentalhouses) {
         echo "The cost is 10000!";
         break;
     case "one bedroom":
-        echo "The cost is 15000!";
+        echo "The cost is 15000!</br>";
         break;
     default:
         echo "There are no other rooms!";
