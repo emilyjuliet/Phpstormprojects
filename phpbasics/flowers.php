@@ -2,17 +2,16 @@
 
 class flowers
 {
-    public $name;
+    public $name = "Sunflower</br></br>";
     public $color;
     public $price;
 
-
     public function details()
     {
-        echo'Flowers are a girls bestfriend :)</br></br>';
-        echo $flowers->name = 'Sunflower</br></br>';
-        echo $flowers->color = 'Yellow</br></br>';
-        echo $flowers->price = 'Ksh 1000</br></br></br>';
+        echo 'Flowers are a girls bestfriend :)</br></br>';
+        echo $this->name;
+        echo $this->color = 'Yellow</br></br>';
+        echo $this->price = 'Ksh 1000</br></br></br>';
     }
 
 
