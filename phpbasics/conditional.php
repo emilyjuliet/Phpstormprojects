@@ -16,15 +16,15 @@ switch ($rentalhouses) {
 }
 
 
-$grade = "63";
+$grade = 63;
 
-if ($grade <= "40") {
+if ($grade <= 40) {
     echo "E!";
-} elseif ($grade <= "55") {
+} elseif ($grade <= 55) {
     echo "D";
-} elseif ($grade <= "65") {
+} elseif ($grade <= 65) {
     echo "C";
-} elseif ($grade <= "75") {
+} elseif ($grade <= 75) {
     echo "B";
 } else {
     echo "A";
