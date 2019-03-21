@@ -34,11 +34,11 @@ class Departmentrep extends Student
     }
 }
 $classrep = new Classrep();
-echo $classrep->displayName();
-echo $classrep->displaySubject();
+$classrep->displayName();
+$classrep->displaySubject();
 $departmentrep = new Departmentrep();
-echo $departmentrep->displayName();
-echo $departmentrep->displaySubject();
+$departmentrep->displayName();
+$departmentrep->displaySubject();
 
 
 
@@ -53,8 +53,11 @@ interface Snacks
 {
     public function combo();
 }
-
-class Circle implements Shapes, Snacks
+abstract class Drinks
+{
+    abstract public function favourite();
+}
+class Circle extends Drinks implements Shapes, Snacks
 {
     public $radius=10;
     public $pie=3.14;
@@ -68,10 +71,16 @@ class Circle implements Shapes, Snacks
     public function combo()
    {
     $this->combo = "Oreo and milk";
-    echo "$this->combo is the best combination ever";
+    echo "$this->combo is the best combination ever</br></br></br>";
+   }
+   public function favourite()
+   {
+       $this->favourite = "Fanta Orange";
+       echo "$this->favourite is my favourite soda!";
    }
 }
 $circle = new Circle();
-echo $circle->calculateArea();
-echo $circle->combo();
+$circle->calculateArea();
+$circle->combo();
+$circle->favourite();
 ?>
